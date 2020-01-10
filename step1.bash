@@ -29,11 +29,12 @@ sudo apt-get install -y build-essential
 grep -F "source /opt/ros/$ROS_VER/setup.bash" ~/.bashrc ||
 echo "source /opt/ros/$ROS_VER/setup.bash" >> ~/.bashrc
 
-grep -F "ROS_MASTER_URI" ~/.bashrc ||
-echo "export ROS_MASTER_URI=http://localhost:11311" >> ~/.bashrc
+# 外部とROSで通信を行いたいためコメントアウト
+#grep -F "ROS_MASTER_URI" ~/.bashrc ||
+#echo "export ROS_MASTER_URI=http://localhost:11311" >> ~/.bashrc
 
-grep -F "ROS_HOSTNAME" ~/.bashrc ||
-echo "export ROS_HOSTNAME=localhost" >> ~/.bashrc
+#grep -F "ROS_HOSTNAME" ~/.bashrc ||
+#echo "export ROS_HOSTNAME=localhost" >> ~/.bashrc
 
 
 ### instruction for user ###
